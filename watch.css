@@ -1,0 +1,39 @@
+/* ============================================================
+   Netflix clone — shared watch/player page
+   ============================================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; list-style: none; text-decoration: none; }
+:root { --red: #e50914; }
+html { scroll-behavior: smooth; }
+body { background: #0b0b0b; color: #fff; font-family: "Helvetica Neue", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+a { color: inherit; }
+img { display: block; }
+
+.wnav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 4%; background: linear-gradient(to bottom, rgba(0,0,0,.9), transparent);
+  position: sticky; top: 0; z-index: 20;
+}
+.wnav .logo { display: inline-flex; align-items: center; gap: 8px; font-size: 1.4rem; font-weight: 900; letter-spacing: 0.04em; color: var(--red); text-transform: uppercase; }
+.wnav .logo i { font-size: 1.1rem; }
+.back-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 9px 18px; border-radius: 4px; font-size: 0.9rem; font-weight: 700;
+  background: rgba(109,109,110,.5); color: #fff; transition: background 0.3s, transform 0.3s;
+}
+.back-btn:hover { background: rgba(109,109,110,.8); transform: translateX(-2px); }
+
+.player-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px 4% 48px; }
+.player-title { width: 100%; max-width: 960px; font-size: clamp(1.4rem, 4vw, 2.2rem); font-weight: 800; margin-bottom: 6px; }
+.player-meta { width: 100%; max-width: 960px; color: #9a9a9a; font-size: 0.9rem; margin-bottom: 18px; display: flex; gap: 14px; align-items: center; }
+.player-meta .dot { width: 4px; height: 4px; border-radius: 50%; background: #666; }
+.player-meta .match { color: #46d369; font-weight: 700; }
+.video {
+  width: 100%; max-width: 960px; aspect-ratio: 16/9;
+  border-radius: 10px; overflow: hidden; background: #000;
+  box-shadow: 0 20px 60px rgba(0,0,0,.7); border: 1px solid #222;
+}
+.video iframe { width: 100%; height: 100%; border: 0; display: block; }
+.player-note { width: 100%; max-width: 960px; margin-top: 18px; color: #b3b3b3; font-size: 0.92rem; line-height: 1.6; }
+
+.wfooter { text-align: center; padding: 22px; color: #666; font-size: 0.8rem; border-top: 1px solid #1c1c1c; }
+.wfooter b { color: var(--red); }

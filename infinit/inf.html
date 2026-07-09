@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
-     <link rel="stylesheet" href="./inf.css">
-     <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/017/396/804/non_2x/netflix-mobile-application-logo-free-png.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infinite — KINORA</title>
+  <link rel="stylesheet" href="../watch.css" />
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/2504/2504929.png" type="image/png" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
-    <header>
-        <nav id="netflixnav">
-            
-            <menu>
-                <ul>
-                    <li> <a href="/index.html">Home</a></li>
-                    
-                </ul>
-            </menu>
-            <!-- MOBILE -->
-             <div class="menumobile">
-                
-                <ul id="mobilemenu" >
-                    <li> <a href="/index.html">Home</a></li>
-                   
-                </ul>
-             </div>
-             <div class="netflix">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="">
-            </div>
-             <!-- MOBILE END -->
-            <div class="searchbar">
-                <div class="nicons">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <p>Matin</p>
-                <i class="fa-solid fa-bell zingrov"></i>
-                </div>
-                
-                <div class="userlogo">
-                    <img src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg" alt="">
-                </div>
-                
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="video">
-            
-      
-            <iframe  src="https://rutube.ru/play/embed/8dc31ae985fc043de3891e585e80c732/?skinColor=e53935" style="border: none;" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
- </div>
-    </main>
-      
+  <nav class="wnav">
+    <a href="../index.html" class="logo"><i class="fa-solid fa-clapperboard"></i> KINORA</a>
+    <a href="../index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to browse</a>
+  </nav>
+
+  <main class="player-wrap">
+    <h1 class="player-title">Infinite</h1>
+    <div class="player-meta">
+      <span class="match">98% Match</span>
+      <span class="dot"></span><span>HD</span>
+      <span class="dot"></span><span>Full Movie</span>
+    </div>
+    <div class="video">
+      <iframe src="https://rutube.ru/play/embed/8dc31ae985fc043de3891e585e80c732/?skinColor=e53935"
+        allow="clipboard-write; autoplay" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+    </div>
+    <p class="player-note">Now playing on KINORA. Use the player controls to go fullscreen or adjust quality. Enjoy the show!</p>
+  </main>
+
+  <footer class="wfooter">
+    <p><b>KINORA</b> · Front-end clone by Mətin Fətizadə</p>
+  </footer>
 </body>
+
 </html>
