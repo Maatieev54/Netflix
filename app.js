@@ -1,9 +1,9 @@
 // ============================================================
-// KINORA browse — rendering, search, nav views & My List
+// KINOFLIX browse — rendering, search, nav views & My List
 // ============================================================
 
 // ===== My List (localStorage) =====
-const LIST_KEY = "kinora-mylist";
+const LIST_KEY = "kinoflix-mylist";
 const getList = () => {
   try { return JSON.parse(localStorage.getItem(LIST_KEY)) || []; }
   catch { return []; }
